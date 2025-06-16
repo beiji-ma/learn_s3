@@ -1,0 +1,4 @@
+boto3>=1.26.0
+boto3-stubs[s3]
+mypy-boto3-s3
+python-dotenv     # 可选：用于加载 .env 中的 AWS 配置

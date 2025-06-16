@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowOnlyTaggedObjects",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject"],
+      "Resource": "arn:aws:s3:::my-first-boto3-bucket-1231234/*",
+      "Condition": {
+        "StringEquals": {
+          "s3:ExistingObjectTag/Project": "DevOps"
+        }
+      }
+    }
+  ]
+}
